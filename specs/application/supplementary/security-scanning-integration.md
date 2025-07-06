@@ -254,7 +254,7 @@ impl SeverityLevel {
             4.0..=6.9 => SeverityLevel::Medium,
             7.0..=8.9 => SeverityLevel::High,
             9.0..=10.0 => SeverityLevel::Critical,
-            _ => SeverityLevel::Medium, // Default for invalid scores
+            _ => SeverityLevel::Unknown, // Explicitly flag invalid scores
         }
     }
 
